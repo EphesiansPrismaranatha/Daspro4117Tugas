@@ -1,0 +1,91 @@
+<html>
+<head>
+        <!--Styling-->
+	<style>
+		body {
+				background-color: rgb(0, 191, 216);
+			}
+			
+		h1 {
+			color: rgb(0, 0, 0);
+			text-align: center;
+		}
+		
+		p {
+			text-align: center;
+		}
+	</style>
+<body>
+                <!-- Start Header -->
+	<a name="atas">
+        <img src="awan.jpg" width="100%">
+<!-- End Header -->
+<center>
+        <h1>Dinus Student Blog</h1>
+        <hr>			
+        <a href="beranda.html">Beranda</a> | 
+        <a href="profil.html">Profil</a> |
+        <a href="artikel.html">Artikel</a> |
+        <a href="buku_tamu.html">Buku Tamu</a>
+        <hr>
+</center>
+<center>
+<h1> Form Buku Tamu</h1>
+<td><label for="nama_lengkap">Nama Lengkap</label></td> <br>
+<input type="text" name="nama_lengkap" size="55"><br><br>
+<td><label for="jenis_kelamin">Jenis Kelamin</label></td> <br>
+<input type="radio" name="jenis_kelamin" value="L"> Perempuan <input type="radio" name="jenis_kelamin" value="P" >Laki laki <br><br>
+<td><label for="alamat_tinggal">Alamat Tinggal</label></td> <br>
+<input type="text" name="alamat_tinggal" size="55"><br><br>
+<td><label for="email">Email</label></td> <br>
+<input type="text" name="email" size="55"><br><br>
+<td><label for="aktif_pada_sosoial_media">Aktif Pada Sosial Media</label></td> <br>
+<input type="checkbox" name="facebook" value="Ya">Facebook
+<input type="checkbox" name="twitter" value="Ya">Twitter
+<input type="checkbox" name="instagram" value="Ya">Instagram
+<input type="checkbox" name="path" value="Ya">Path<br>
+<td><label for="prodi">Progtam Studi : </label></td>
+<td>
+    <select id="prodi" name="prodi" required>
+    <option value="">Pilih Program Studi</option>
+    <option value="A11">Teknik Informatika S-1</option>
+    <option value="A12">Sistem Informasi S-1</option>
+    <option value="A14">Desain Komunikasi Visual S-1</option>
+    <option value="A15">Ilmu Komunikasi S-1</option>
+    <option value="A16">Film dan Televisi S-Tr</option>
+    <option value="A17">Animasi S-Tr</option>
+    <option value="A22">Teknik Informatika D-III</option>
+    <option value="B11">Manajemen S-1</option>
+    <option value="B12">Akuntansi S-1</option>
+    <option value="C11">Sastra Inggris S-1</option>
+    <option value="C12">Sastra Jepang S-1</option>
+    <option value="C13">Manajemen Perhotelan S-Tr</option>
+    <option value="D11">Kesehatan Masyarakat S-1</option>
+    <option value="D12">Kesehatan Lingkungan S-1</option>
+    <option value="D22">Rekam Medis dan Informasi Kesehatan D-III</option>
+    <option value="E11">Teknik Elektro S-1</option>
+    <option value="E12">Teknik Industri S-1</option>
+    <option value="E13">Teknik Biomedis S-1</option>
+    </select>
+</td>
+<br>
+<td><label for="web">Mengetahui Web Ini Dari:</label></td>
+<td>
+    <select id="web" name="web" required>
+    <option value="Pilih">Pilih</option>
+    <option value="Saudara">Web UDINUS</option>
+    <option value="Teman">Teman/Kerabat</option>
+    <option value="A12">Browsing Internet</option>
+    <option value="A14">Surat Kabar</option>
+    </select>
+</td>
+<br>
+ Pesan <br>
+    <textarea name="pesan" cols="40" rows="3"></textarea><br>
+    <form action=“buku_tamu_simpan.php” >
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Batal">
+     </form>
+    </center>
+</body>
+</html>
